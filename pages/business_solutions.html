@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soluções Empresariais - GearTech Professional</title>
+    <meta name="description" content="Estratégia tecnológica que escala com seu negócio. Consultoria especializada, suporte proativo e liderança em TI para empresas de todos os portes." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fgeartechp1617back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container-max">
+            <div class="flex items-center justify-between py-4 px-6">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white animation-gear-spin" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L19 6.5C18.9 6.1 18.7 5.7 18.5 5.4L19.2 3.5L17.5 1.8L15.6 2.5C15.3 2.3 14.9 2.1 14.5 2L14 0H10L9.5 2C9.1 2.1 8.7 2.3 8.4 2.5L6.5 1.8L4.8 3.5L5.5 5.4C5.3 5.7 5.1 6.1 5 6.5L3 7V9L5 9.5C5.1 9.9 5.3 10.3 5.5 10.6L4.8 12.5L6.5 14.2L8.4 13.5C8.7 13.7 9.1 13.9 9.5 14L10 16H14L14.5 14C14.9 13.9 15.3 13.7 15.6 13.5L17.5 14.2L19.2 12.5L18.5 10.6C18.7 10.3 18.9 9.9 19 9.5L21 9ZM12 8C14.2 8 16 9.8 16 12S14.2 16 12 16S8 14.2 8 12S9.8 8 12 8Z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">GearTech</h1>
+                        <p class="text-xs text-text-secondary">Professional</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Início</a>
+                    <a href="business_solutions.html" class="text-primary font-semibold border-b-2 border-accent pb-1">Soluções Empresariais</a>
+                    <a href="service_portfolio.html" class="text-text-secondary hover:text-primary transition-colors">Serviços</a>
+                    <a href="client_success_stories.html" class="text-text-secondary hover:text-primary transition-colors">Casos de Sucesso</a>
+                    <a href="about.html" class="text-text-secondary hover:text-primary transition-colors">Sobre</a>
+                    <a href="contact.html" class="text-text-secondary hover:text-primary transition-colors">Contato</a>
+                </div>
+
+                <!-- Emergency Contact -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="text-right">
+                        <p class="text-xs text-text-secondary">Emergência 24/7</p>
+                        <a href="tel:+5511999887766" class="text-lg font-bold text-error hover:text-error-600 transition-colors">(11) 99988-7766</a>
+                    </div>
+                    <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-surface transition-colors" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-primary-200">
+                <div class="px-6 py-4 space-y-4">
+                    <a href="homepage.html" class="block text-text-secondary hover:text-primary transition-colors">Início</a>
+                    <a href="business_solutions.html" class="block text-primary font-semibold">Soluções Empresariais</a>
+                    <a href="service_portfolio.html" class="block text-text-secondary hover:text-primary transition-colors">Serviços</a>
+                    <a href="client_success_stories.html" class="block text-text-secondary hover:text-primary transition-colors">Casos de Sucesso</a>
+                    <a href="about.html" class="block text-text-secondary hover:text-primary transition-colors">Sobre</a>
+                    <a href="contact.html" class="block text-text-secondary hover:text-primary transition-colors">Contato</a>
+                    <div class="pt-4 border-t border-primary-200">
+                        <p class="text-xs text-text-secondary mb-1">Emergência 24/7</p>
+                        <a href="tel:+5511999887766" class="text-lg font-bold text-error">(11) 99988-7766</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section section-padding">
+        <div class="container-max">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6">
+                    Estratégia Tecnológica que <span class="text-gradient">Escala</span> com seu Negócio
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 leading-relaxed">
+                    Transforme desafios tecnológicos em vantagens competitivas. Nossa consultoria estratégica alinha tecnologia com objetivos de negócio, garantindo crescimento sustentável e operações eficientes.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#assessment" class="btn-primary">Avaliar Minha Empresa</a>
+                    <a href="#consultation" class="btn-secondary">Agendar Consultoria</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Assessment Tool -->
+    <section id="assessment" class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Avaliação de Maturidade Tecnológica</h2>
+                <p class="text-xl text-text-secondary">Descubra o nível atual da sua infraestrutura de TI e identifique oportunidades de melhoria</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="card p-8">
+                    <div id="assessmentForm" class="space-y-8">
+                        <!-- Question 1 -->
+                        <div class="assessment-question">
+                            <h3 class="text-lg font-semibold text-primary mb-4">1. Como sua empresa gerencia backups de dados?</h3>
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="backup" value="1" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Não fazemos backups regulares</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="backup" value="2" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Backups manuais ocasionais</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="backup" value="3" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Backups automáticos locais</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="backup" value="4" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Backups automáticos com redundância na nuvem</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="assessment-question">
+                            <h3 class="text-lg font-semibold text-primary mb-4">2. Qual é a frequência de problemas técnicos que afetam a produtividade?</h3>
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="issues" value="1" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Problemas diários que interrompem o trabalho</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="issues" value="2" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Problemas semanais que causam atrasos</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="issues" value="3" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Problemas mensais, geralmente resolvidos rapidamente</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="issues" value="4" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Raramente temos problemas técnicos</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="assessment-question">
+                            <h3 class="text-lg font-semibold text-primary mb-4">3. Como é feita a segurança dos dados da empresa?</h3>
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="security" value="1" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Apenas antivírus básico</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="security" value="2" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Antivírus + firewall básico</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="security" value="3" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Segurança multicamadas com monitoramento</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="radio" name="security" value="4" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Segurança avançada com compliance e auditoria</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button onclick="calculateAssessment()" class="btn-primary">Calcular Resultado</button>
+                        </div>
+                    </div>
+
+                    <!-- Assessment Results -->
+                    <div id="assessmentResults" class="hidden space-y-6">
+                        <div class="text-center">
+                            <div id="maturityLevel" class="text-4xl font-bold text-accent mb-2"></div>
+                            <div id="maturityLabel" class="text-xl font-semibold text-primary mb-4"></div>
+                            <div id="maturityDescription" class="text-text-secondary mb-6"></div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div id="recommendedPackage" class="card p-6 border-2 border-accent">
+                                <h3 class="text-lg font-semibold text-primary mb-2">Pacote Recomendado</h3>
+                                <div id="packageName" class="text-2xl font-bold text-accent mb-2"></div>
+                                <div id="packagePrice" class="text-text-secondary mb-4"></div>
+                                <a href="#packages" class="btn-primary w-full text-center">Ver Detalhes</a>
+                            </div>
+
+                            <div class="card p-6">
+                                <h3 class="text-lg font-semibold text-primary mb-2">Economia Potencial</h3>
+                                <div id="potentialSavings" class="text-2xl font-bold text-success mb-2"></div>
+                                <div class="text-text-secondary mb-4">Por mês em custos evitados</div>
+                                <a href="#roi-calculator" class="btn-secondary w-full text-center">Calcular ROI</a>
+                            </div>
+
+                            <div class="card p-6">
+                                <h3 class="text-lg font-semibold text-primary mb-2">Próximo Passo</h3>
+                                <div class="text-lg font-semibold text-primary mb-2">Consultoria Gratuita</div>
+                                <div class="text-text-secondary mb-4">45 minutos de análise personalizada</div>
+                                <a href="#consultation" class="btn-primary w-full text-center">Agendar</a>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button onclick="resetAssessment()" class="btn-secondary">Refazer Avaliação</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section id="packages" class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Pacotes de Soluções Empresariais</h2>
+                <p class="text-xl text-text-secondary">Escolha o nível de parceria tecnológica ideal para sua empresa</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Essential Support -->
+                <div class="card p-8 hover:shadow-card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-warning-50 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,17A1.5,1.5 0 0,1 10.5,15.5A1.5,1.5 0 0,1 12,14A1.5,1.5 0 0,1 13.5,15.5A1.5,1.5 0 0,1 12,17M12,10.5C12.8,10.5 13.5,9.8 13.5,9C13.5,8.2 12.8,7.5 12,7.5C11.2,7.5 10.5,8.2 10.5,9C10.5,9.8 11.2,10.5 12,10.5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Suporte Essencial</h3>
+                        <p class="text-text-secondary mb-4">Manutenção reativa quando você precisa</p>
+                        <div class="text-3xl font-bold text-accent mb-2">R$ 800-1.500</div>
+                        <div class="text-sm text-text-secondary">por mês</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Suporte técnico sob demanda</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Manutenção corretiva de equipamentos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Resposta em até 4 horas</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Relatórios básicos de serviços</span>
+                        </li>
+                    </ul>
+
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-primary mb-2">Ideal para:</h4>
+                        <p class="text-sm text-text-secondary">Pequenas empresas (5-15 funcionários) com necessidades básicas de TI</p>
+                    </div>
+
+                    <a href="contact.html" class="btn-secondary w-full text-center">Solicitar Orçamento</a>
+                </div>
+
+                <!-- Proactive Partnership -->
+                <div class="card p-8 hover:shadow-card-hover transition-all duration-300 border-2 border-accent relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-accent text-white px-4 py-1 rounded-full text-sm font-semibold">Mais Popular</span>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-accent-50 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Parceria Proativa</h3>
+                        <p class="text-text-secondary mb-4">Prevenção + monitoramento contínuo</p>
+                        <div class="text-3xl font-bold text-accent mb-2">R$ 2.500-4.500</div>
+                        <div class="text-sm text-text-secondary">por mês</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Tudo do plano Essencial</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Monitoramento 24/7 de sistemas</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Manutenção preventiva mensal</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Backup automático na nuvem</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Resposta em até 2 horas</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Relatórios mensais detalhados</span>
+                        </li>
+                    </ul>
+
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-primary mb-2">Ideal para:</h4>
+                        <p class="text-sm text-text-secondary">Empresas médias (15-50 funcionários) que dependem da tecnologia</p>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary w-full text-center">Solicitar Orçamento</a>
+                </div>
+
+                <!-- Strategic Technology Leadership -->
+                <div class="card p-8 hover:shadow-card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-success-50 rounded-lg flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2L13.09,8.26L22,9L13.09,9.74L12,16L10.91,9.74L2,9L10.91,8.26L12,2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Liderança Estratégica</h3>
+                        <p class="text-text-secondary mb-4">CTO virtual + estratégia completa</p>
+                        <div class="text-3xl font-bold text-accent mb-2">R$ 6.000-12.000</div>
+                        <div class="text-sm text-text-secondary">por mês</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Tudo do plano Proativo</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">CTO virtual dedicado</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Planejamento estratégico de TI</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Implementação de projetos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Resposta imediata (1 hora)</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-text-secondary">Dashboard executivo em tempo real</span>
+                        </li>
+                    </ul>
+
+                    <div class="mb-6">
+                        <h4 class="font-semibold text-primary mb-2">Ideal para:</h4>
+                        <p class="text-sm text-text-secondary">Grandes empresas (50+ funcionários) com foco em inovação</p>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary w-full text-center">Solicitar Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section id="roi-calculator" class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Calculadora de ROI</h2>
+                <p class="text-xl text-text-secondary">Descubra quanto você pode economizar com gestão proativa de TI</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="card p-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Calculator Inputs -->
+                        <div class="space-y-6">
+                            <h3 class="text-xl font-semibold text-primary mb-4">Informações da sua Empresa</h3>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Número de Funcionários</label>
+                                <input type="number" id="employees" class="input-field" placeholder="Ex: 25" min="1" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Horas de Downtime por Mês (atual)</label>
+                                <input type="number" id="downtime" class="input-field" placeholder="Ex: 8" min="0" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Custo Médio por Hora de Funcionário (R$)</label>
+                                <input type="number" id="hourlyRate" class="input-field" placeholder="Ex: 50" min="1" />
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Gastos Mensais com TI Reativo (R$)</label>
+                                <input type="number" id="currentCosts" class="input-field" placeholder="Ex: 3000" min="0" />
+                            </div>
+
+                            <button onclick="calculateROI()" class="btn-primary w-full">Calcular ROI</button>
+                        </div>
+
+                        <!-- Results Display -->
+                        <div class="space-y-6">
+                            <h3 class="text-xl font-semibold text-primary mb-4">Resultados da Análise</h3>
+                            
+                            <div id="roiResults" class="space-y-4">
+                                <div class="bg-surface rounded-lg p-6 text-center">
+                                    <svg class="w-16 h-16 mx-auto mb-4 text-text-secondary opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"/>
+                                    </svg>
+                                    <p class="text-text-secondary">Preencha os campos ao lado para ver sua análise de ROI personalizada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Solutions -->
+    <section class="section-padding bg-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Soluções por Setor</h2>
+                <p class="text-xl text-text-secondary">Expertise especializada para diferentes indústrias</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Healthcare -->
+                <div class="card p-8 hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-error-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-error" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M17,13H13V17H11V13H7V11H11V7H13V11H17V13Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Saúde e Medicina</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Compliance LGPD/HIPAA</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Sistemas de prontuário eletrônico</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Backup seguro de dados médicos</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-secondary w-full text-center">Saber Mais</a>
+                </div>
+
+                <!-- Financial Services -->
+                <div class="card p-8 hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-success-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Serviços Financeiros</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Segurança bancária avançada</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Compliance regulatório</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Disaster recovery garantido</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-secondary w-full text-center">Saber Mais</a>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="card p-8 hover:shadow-card-hover transition-all duration-300">
+                    <div class="w-16 h-16 bg-warning-50 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L19 6.5C18.9 6.1 18.7 5.7 18.5 5.4L19.2 3.5L17.5 1.8L15.6 2.5C15.3 2.3 14.9 2.1 14.5 2L14 0H10L9.5 2C9.1 2.1 8.7 2.3 8.4 2.5L6.5 1.8L4.8 3.5L5.5 5.4C5.3 5.7 5.1 6.1 5 6.5L3 7V9L5 9.5C5.1 9.9 5.3 10.3 5.5 10.6L4.8 12.5L6.5 14.2L8.4 13.5C8.7 13.7 9.1 13.9 9.5 14L10 16H14L14.5 14C14.9 13.9 15.3 13.7 15.6 13.5L17.5 14.2L19.2 12.5L18.5 10.6C18.7 10.3 18.9 9.9 19 9.5L21 9ZM12 8C14.2 8 16 9.8 16 12S14.2 16 12 16S8 14.2 8 12S9.8 8 12 8Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-4">Indústria e Manufatura</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Sistemas de automação industrial</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Monitoramento de produção</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z"/>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Integração ERP/MES</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="btn-secondary w-full text-center">Saber Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="section-padding bg-primary text-white">
+        <div class="container-max">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4">O que Nossos Clientes Dizem</h2>
+                <p class="text-xl text-primary-200">Depoimentos de empresas que transformaram sua TI conosco</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-primary-800 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Carlos Mendes" class="w-16 h-16 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-white">Carlos Mendes</h4>
+                            <p class="text-primary-200">CEO, TechFlow Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-100 mb-4">"Desde que implementamos o plano Proativo da GearTech, nosso downtime reduziu 85%. A equipe é extremamente competente e sempre disponível."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="text-accent font-semibold">85% menos downtime</div>
+                        <div class="text-success font-semibold">R$ 15.000 economizados/mês</div>
+                    </div>
+                </div>
+
+                <div class="bg-primary-800 rounded-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.pixabay.com/photo/2017/06/26/02/47/man-2442565_1280.jpg" alt="Ana Silva" class="w-16 h-16 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-white">Ana Silva</h4>
+                            <p class="text-primary-200">Diretora de Operações, MedCare</p>
+                        </div>
+                    </div>
+                    <p class="text-primary-100 mb-4">"A GearTech nos ajudou a implementar compliance total com LGPD. Agora temos tranquilidade total com a segurança dos dados dos nossos pacientes."</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="text-accent font-semibold">100% Compliance</div>
+                        <div class="text-success font-semibold">Zero incidentes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="text-4xl font-bold text-accent mb-2">98%</div>
+                        <div class="text-primary-200">Taxa de Retenção de Clientes</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-success mb-2">4.9/5</div>
+                        <div class="text-primary-200">Avaliação Média de Satisfação</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-warning mb-2">3+ anos</div>
+                        <div class="text-primary-200">Tempo Médio de Parceria</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Booking -->
+    <section id="consultation" class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Agende sua Consultoria Estratégica</h2>
+                    <p class="text-xl text-text-secondary">45 minutos de análise gratuita para identificar oportunidades na sua TI</p>
+                </div>
+
+                <div class="card p-8">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Nome Completo *</label>
+                                <input type="text" class="input-field" placeholder="Seu nome completo" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Cargo *</label>
+                                <input type="text" class="input-field" placeholder="Ex: CEO, Diretor de TI" required />
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Email Corporativo *</label>
+                                <input type="email" class="input-field" placeholder="seu.email@empresa.com" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Telefone *</label>
+                                <input type="tel" class="input-field" placeholder="(11) 99999-9999" required />
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Empresa *</label>
+                                <input type="text" class="input-field" placeholder="Nome da sua empresa" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-primary mb-2">Número de Funcionários *</label>
+                                <select class="input-field" required>
+                                    <option value>Selecione</option>
+                                    <option value="1-10">1-10 funcionários</option>
+                                    <option value="11-25">11-25 funcionários</option>
+                                    <option value="26-50">26-50 funcionários</option>
+                                    <option value="51-100">51-100 funcionários</option>
+                                    <option value="100+">Mais de 100 funcionários</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Principais Desafios de TI</label>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Downtime frequente</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Segurança de dados</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Backup e recuperação</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Custos elevados</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Falta de estratégia</span>
+                                </label>
+                                <label class="flex items-center space-x-2">
+                                    <input type="checkbox" class="text-accent focus:ring-accent-300" />
+                                    <span class="text-text-secondary">Compliance regulatório</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Horário Preferido</label>
+                            <select class="input-field">
+                                <option value>Selecione o melhor horário</option>
+                                <option value="morning">Manhã (9h às 12h)</option>
+                                <option value="afternoon">Tarde (13h às 17h)</option>
+                                <option value="evening">Início da noite (18h às 20h)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Informações Adicionais</label>
+                            <textarea class="input-field" rows="4" placeholder="Descreva brevemente sua situação atual de TI e objetivos..."></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary">Agendar Consultoria Gratuita</button>
+                            <p class="text-sm text-text-secondary mt-4">
+                                Entraremos em contato em até 2 horas úteis para confirmar o agendamento
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white section-padding">
+        <div class="container-max">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L19 6.5C18.9 6.1 18.7 5.7 18.5 5.4L19.2 3.5L17.5 1.8L15.6 2.5C15.3 2.3 14.9 2.1 14.5 2L14 0H10L9.5 2C9.1 2.1 8.7 2.3 8.4 2.5L6.5 1.8L4.8 3.5L5.5 5.4C5.3 5.7 5.1 6.1 5 6.5L3 7V9L5 9.5C5.1 9.9 5.3 10.3 5.5 10.6L4.8 12.5L6.5 14.2L8.4 13.5C8.7 13.7 9.1 13.9 9.5 14L10 16H14L14.5 14C14.9 13.9 15.3 13.7 15.6 13.5L17.5 14.2L19.2 12.5L18.5 10.6C18.7 10.3 18.9 9.9 19 9.5L21 9ZM12 8C14.2 8 16 9.8 16 12S14.2 16 12 16S8 14.2 8 12S9.8 8 12 8Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">GearTech Professional</h3>
+                        </div>
+                    </div>
+                    <p class="text-primary-200">Seu parceiro estratégico em tecnologia. Soluções confiáveis para empresas que precisam de excelência em TI.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-primary-200 hover:text-white transition-colors">Início</a></li>
+                        <li><a href="business_solutions.html" class="text-primary-200 hover:text-white transition-colors">Soluções Empresariais</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-200 hover:text-white transition-colors">Portfólio de Serviços</a></li>
+                        <li><a href="client_success_stories.html" class="text-primary-200 hover:text-white transition-colors">Casos de Sucesso</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="service_portfolio.html" class="text-primary-200 hover:text-white transition-colors">Manutenção de Computadores</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-200 hover:text-white transition-colors">Instalação de Redes</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-200 hover:text-white transition-colors">Configuração de Servidores</a></li>
+                        <li><a href="business_solutions.html" class="text-primary-200 hover:text-white transition-colors">Consultoria Estratégica</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/>
+                            </svg>
+                            <a href="tel:+5511999887766" class="text-primary-200 hover:text-white transition-colors">(11) 99988-7766</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                            </svg>
+                            <a href="mailto:contato@geartech.com.br" class="text-primary-200 hover:text-white transition-colors">contato@geartech.com.br</a>
+                        </li>
+                        <li class="flex items-start space-x-2">
+                            <svg class="w-4 h-4 text-accent mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                            </svg>
+                            <span class="text-primary-200">São Paulo, SP - Atendimento em toda região metropolitana</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-700 pt-8 text-center">
+                <p class="text-primary-200">© 2025 GearTech Professional. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Assessment calculation
+        function calculateAssessment() {
+            const backup = parseInt(document.querySelector('input[name="backup"]:checked')?.value || 0);
+            const issues = parseInt(document.querySelector('input[name="issues"]:checked')?.value || 0);
+            const security = parseInt(document.querySelector('input[name="security"]:checked')?.value || 0);
+
+            if (backup === 0 || issues === 0 || security === 0) {
+                alert('Por favor, responda todas as perguntas antes de calcular o resultado.');
+                return;
+            }
+
+            const totalScore = backup + issues + security;
+            const averageScore = totalScore / 3;
+
+            let maturityLevel, maturityLabel, maturityDescription, packageName, packagePrice, potentialSavings;
+
+            if (averageScore <= 1.5) {
+                maturityLevel = "Nível 1";
+                maturityLabel = "Básico - Necessita Atenção Urgente";
+                maturityDescription = "Sua infraestrutura de TI apresenta riscos significativos que podem impactar severamente o negócio.";
+                packageName = "Liderança Estratégica";
+                packagePrice = "R$ 6.000-12.000/mês";
+                potentialSavings = "R$ 8.000-15.000";
+            } else if (averageScore <= 2.5) {
+                maturityLevel = "Nível 2";
+                maturityLabel = "Intermediário - Melhorias Necessárias";
+                maturityDescription = "Sua TI funciona, mas há oportunidades importantes de otimização e prevenção de problemas.";
+                packageName = "Parceria Proativa";
+                packagePrice = "R$ 2.500-4.500/mês";
+                potentialSavings = "R$ 3.000-6.000";
+            } else if (averageScore <= 3.5) {
+                maturityLevel = "Nível 3";
+                maturityLabel = "Bom - Ajustes Pontuais";
+                maturityDescription = "Sua infraestrutura está bem estruturada, mas pode se beneficiar de monitoramento proativo.";
+                packageName = "Parceria Proativa";
+                packagePrice = "R$ 2.500-4.500/mês";
+                potentialSavings = "R$ 2.000-4.000";
+            } else {
+                maturityLevel = "Nível 4";
+                maturityLabel = "Excelente - Manutenção Estratégica";
+                maturityDescription = "Sua TI está muito bem estruturada. Foque em inovação e crescimento estratégico.";
+                packageName = "Suporte Essencial";
+                packagePrice = "R$ 800-1.500/mês";
+                potentialSavings = "R$ 1.000-2.500";
+            }
+
+            // Show results
+            document.getElementById('maturityLevel').textContent = maturityLevel;
+            document.getElementById('maturityLabel').textContent = maturityLabel;
+            document.getElementById('maturityDescription').textContent = maturityDescription;
+            document.getElementById('packageName').textContent = packageName;
+            document.getElementById('packagePrice').textContent = packagePrice;
+            document.getElementById('potentialSavings').textContent = potentialSavings;
+
+            document.getElementById('assessmentForm').classList.add('hidden');
+            document.getElementById('assessmentResults').classList.remove('hidden');
+        }
+
+        function resetAssessment() {
+            document.getElementById('assessmentForm').classList.remove('hidden');
+            document.getElementById('assessmentResults').classList.add('hidden');
+            
+            // Reset form
+            document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                radio.checked = false;
+            });
+        }
+
+        // ROI Calculator
+        function calculateROI() {
+            const employees = parseInt(document.getElementById('employees').value) || 0;
+            const downtime = parseInt(document.getElementById('downtime').value) || 0;
+            const hourlyRate = parseInt(document.getElementById('hourlyRate').value) || 0;
+            const currentCosts = parseInt(document.getElementById('currentCosts').value) || 0;
+
+            if (employees === 0 || hourlyRate === 0) {
+                alert('Por favor, preencha pelo menos o número de funcionários e custo por hora.');
+                return;
+            }
+
+            // Calculations
+            const monthlyDowntimeCost = employees * downtime * hourlyRate;
+            const proactiveServiceCost = Math.max(2500, employees * 100); // Estimate based on company size
+            const downtimeReduction = 0.75; // 75% reduction with proactive service
+            const newDowntimeCost = monthlyDowntimeCost * (1 - downtimeReduction);
+            const totalCurrentCosts = monthlyDowntimeCost + currentCosts;
+            const totalNewCosts = newDowntimeCost + proactiveServiceCost;
+            const monthlySavings = totalCurrentCosts - totalNewCosts;
+            const annualSavings = monthlySavings * 12;
+            const roi = totalCurrentCosts > 0 ? ((monthlySavings / proactiveServiceCost) * 100) : 0;
+
+            const resultsHTML = `
+                <div class="space-y-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-success mb-2">R$ ${monthlySavings.toLocaleString('pt-BR')}</div>
+                        <div class="text-lg text-primary mb-4">Economia Mensal Estimada</div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="text-2xl font-bold text-error mb-1">R$ ${totalCurrentCosts.toLocaleString('pt-BR')}</div>
+                            <div class="text-sm text-text-secondary">Custos Atuais/Mês</div>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <div class="text-2xl font-bold text-success mb-1">R$ ${totalNewCosts.toLocaleString('pt-BR')}</div>
+                            <div class="text-sm text-text-secondary">Custos com GearTech/Mês</div>
+                        </div>
+                    </div>
+
+                    <div class="bg-accent-50 rounded-lg p-6">
+                        <h4 class="font-semibold text-primary mb-4">Resumo dos Benefícios:</h4>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span class="text-text-secondary">Redução de Downtime:</span>
+                                <span class="font-semibold text-success">75%</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-text-secondary">Economia Anual:</span>
+                                <span class="font-semibold text-success">R$ ${annualSavings.toLocaleString('pt-BR')}</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-text-secondary">ROI Mensal:</span>
+                                <span class="font-semibold text-accent">${roi.toFixed(1)}%</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#consultation" class="btn-primary">Agendar Consultoria</a>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('roiResults').innerHTML = resultsHTML;
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
